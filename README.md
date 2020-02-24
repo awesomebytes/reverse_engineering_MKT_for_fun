@@ -1,15 +1,22 @@
 # Reverse Engineering Mario Kart Tour on Android
 
-I found these [cool looking graphs](https://www.reddit.com/r/MarioKartTour/comments/f304jv/tier_list_of_all_charactes_in_mario_kart_tour/) on which driver is best in [reddit/r/MarioKartTour](https://www.reddit.com/r/MarioKartTour).
+I found these [cool looking graphs](https://www.reddit.com/r/MarioKartTour/comments/f304jv/tier_list_of_all_charactes_in_mario_kart_tour/) on which driver is best in [reddit/r/MarioKartTour](https://www.reddit.com/r/MarioKartTour) by [HGProductions00](https://www.reddit.com/user/HGProductions00/).
+
+![MKT cool graph](graph.png)
+
 They were done by hand, as in, extracting all the game data necessary to compute
 which are the best drivers by looking at the game and writing them down in, say,
 a spreadsheet.
 
+I also found out other people did similar things (like [amazingly complete blog articles](https://www.imore.com/every-vehicle-confirmed-mario-kart-tour)) again, by hand.
+
 This seemed way too tiresome, there must be a better way I thought. I also
 wondered why Nintendo is not providing this data for gamers to use. It's not
-like anyone will be hurt by it and big fans will love it. Or so I think!
+like anyone will be hurt by it and big fans will love it. Or so I think! They must have a busy agenda.
+The game seems to be doing pretty well.
 
-So I went into the innocent adventure of trying to find some kind of table that relates
+So I went into the innocent adventure of trying to find some kind of table in the datafiles
+of the game that relates
 drivers with races. And also karts and gliders, but, we should start somewhere. Note that
 I don't pretend to do anything else with this than finding that and learning on the way.
 
