@@ -391,7 +391,8 @@ function bytes2hex(array) {
 # to your VM, the VM, if using VirtualBox, needs to have the network setup as bridging
 # to have an IP we can access
 device = frida.get_usb_device()
-# We spawn the Mario Kart app
+# We spawn the Mario Kart app, I found the name of the app when opening it
+# and doing frida-ps -U | grep nintendo
 pid = device.spawn(["com.nintendo.zaka"])
 session = device.attach(pid)
 script = session.create_script(ss)
