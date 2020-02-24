@@ -64,31 +64,7 @@ It looks like this:
 
 
 # Looking around
-We found an interesting (and very standard) folder called `assets`. Inside there is a folder called `_nabe_`. Not that standard.
-
-
-Maybe a bit too late but I found I could just take the extracted files from the emulator doing
-
-```bash
-# connect to the emulator
-adb connect 192.168.0.15
-# Start a shell in the emulator
-adb shell
-# become root
-su
-# Find the game files
-cd /data/data/com.nintendo.zaka
-# Check it out:
-#   x86_64:/data/data/com.nintendo.zaka/files/Nabe # ls
-# a_1112cd3c_82005878 a_6c6d55a1_67f2a252 a_cee3a1de_50435b42 
-# a_1154bc96_7a8c84ab a_6c845b98_1eb218e5 a_cf553d2e_2ce201a6 
-# a_115c27bf_efacf6c7 a_6c9e2e9b_428d4747 a_cf56bd1a_cf90f146
-# ...
-# Copy them
-scp -r files/Nabe 192.168.0.13:~/
-```
-
-And we are done... note that this is way easier (and way less fun) than the stuff I learnt in the next section.
+We found an interesting (and very standard) folder called `assets`. Inside there is a folder called `_nabe_`. Not that standard. Inside that folder we find A LOT of files ending the filename with `.zst`. 380 files to exact.
 
 # zst files
 I never heard about zst files but a bit of looking on the internet gets us to 
@@ -492,4 +468,28 @@ I found [3dstools](https://github.com/ObsidianX/3dstools) containing tools to de
 ```
 
 
+# Quicker way to get the extracted zst files...
+
+Maybe a bit too late (I just discovered this a couple of days into playing into all this) but I found I could just take the extracted files from the emulator doing:
+
+```bash
+# connect to the emulator
+adb connect 192.168.0.15
+# Start a shell in the emulator
+adb shell
+# become root
+su
+# Find the game files
+cd /data/data/com.nintendo.zaka
+# Check it out:
+#   x86_64:/data/data/com.nintendo.zaka/files/Nabe # ls
+# a_1112cd3c_82005878 a_6c6d55a1_67f2a252 a_cee3a1de_50435b42 
+# a_1154bc96_7a8c84ab a_6c845b98_1eb218e5 a_cf553d2e_2ce201a6 
+# a_115c27bf_efacf6c7 a_6c9e2e9b_428d4747 a_cf56bd1a_cf90f146
+# ...
+# Copy them
+scp -r files/Nabe 192.168.0.13:~/
+```
+
+And we are done... note that this is way easier (and way less fun) than the stuff I learnt.
 
