@@ -493,3 +493,12 @@ scp -r files/Nabe 192.168.0.13:~/
 
 And we are done... note that this is way easier (and way less fun) than the stuff I learnt.
 
+# TODOs
+
+Keep investigating about the files :) I ignored the UnityFS files, but maybe the key is there (most probably?) to find 
+that table I expect to find.
+
+I found more info in this [Mario Kart Tour wiki](https://github.com/knobse/Mario-Kart-Tour/wiki). But not enough
+to find my holy grail table.
+
+If anyone has time and wants to keep digging, contact me! Or join the discord channel from that wiki :)
